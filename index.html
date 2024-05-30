@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+           <ul class="sidebar">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#service">SERVICE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li class="cross"><i class="fa-regular fa-circle-xmark" onclick=hideSidebar()></i>
+            </ul> 
+            <ul class="main">
+            <li class="logo">PRODIGY INFOTECH</li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#service">SERVICE</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li class="menu_icon" onclick=showSidebar()>
+<i class="fa-solid fa-bars" ></i></li></u>
+        </nav> 
+        
+        <section id="home" class="section about-section">
+            <h2>WELCOME TO PRODIGY INFOTECH</h2>
+            <p>Providing World Class E-Learning Experince with Real world Internships</p>
+        </section>
+    <section id="about" class="section about-section">
+        <h2>About Us</h2>
+        <p>Our mission is to create innovative and accessible learning solutions that empower people of all ages and backgrounds to achieve their full potential. Whether you're a student looking to improve your grades, a professional seeking to upskill, or an organization looking to enhance employee training, we have the tools and resources you need to succeed</p>
+    </section>
+    <section id="services" class="section about-section">
+        <h2>Services</h2>
+        <p>Our internships are available in a range of fields, including Web Development, Machine Learning, Data Science, and more. Interns will have the chance to work on real-world projects, collaborate with teams, and gain valuable insights into their respective industries.</p>
+    </section>
+    <section id="contact" class="section about-section" >
+        <h2>Contact Us</h2><br>
+        <pre>Let’s talk about
+            Love to hear from you!
+            Our Location
+            Mumbai - 400018, Maharashta, India
+            How Can We Help?
+            contact@prodigyinfotech.dev</pre>
+    </section> 
+    
+     <script src="script.js"></script>
+   
+   <script>function showSidebar(){
+        const sidebar=document.querySelector('.sidebar')
+        sidebar.style.display='flex'
+    }
+    function hideSidebar(){
+        const sidebar=document.querySelector('.sidebar')
+        sidebar.style.display='none'
+    }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
